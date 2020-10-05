@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36760" started-at="2020-09-20T16:32:00 IST" finished-at="2020-09-20T16:32:37 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36760" started-at="2020-09-20T16:32:00 IST" finished-at="2020-09-20T16:32:37 IST">
+      <class name="core.ddf.testCases.LoginTest">
+        <test-method status="PASS" signature="Initialize()[pri:0, instance:core.ddf.testCases.LoginTest@11e21d0e]" name="Initialize" is-config="true" duration-ms="747" started-at="2020-09-20T16:32:00 IST" finished-at="2020-09-20T16:32:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method status="FAIL" signature="login(java.util.Hashtable)[pri:0, instance:core.ddf.testCases.LoginTest@11e21d0e]" name="login" duration-ms="33258" started-at="2020-09-20T16:32:01 IST" data-provider="getData" finished-at="2020-09-20T16:32:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Selenium1, browser=chrome, userName=searchingselenium@gmail.com, runmode=y}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at core.ddf.base.BaseTest.getElement(BaseTest.java:126)
+at core.ddf.base.BaseTest.click(BaseTest.java:104)
+at core.ddf.base.BaseTest.zohoLogout(BaseTest.java:243)
+at core.ddf.testCases.LoginTest.login(LoginTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ending()[pri:0, instance:core.ddf.testCases.LoginTest@11e21d0e]" name="ending" is-config="true" duration-ms="2406" started-at="2020-09-20T16:32:34 IST" finished-at="2020-09-20T16:32:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ending -->
+      </class> <!-- core.ddf.testCases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
